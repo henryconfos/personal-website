@@ -2,13 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background-rgb: 255, 248, 243;
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: #FBF8F3;
+  background: #fff;
 }
 
 @layer utilities {
@@ -22,30 +17,48 @@ body {
   padding: 25px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 1%;
 }
 
-.left h1{
-  color: #EA6536;
-  font-weight: bold;
+.head ul li{
+  font-size: larger;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
-.center {
-  width: 50%;
+.splash{
+  height: 65vh;
+  margin-top: 3%;
+  width: 100%;
 }
 
-.center ul {
+.splash-inner{
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  flex-direction: row;
+  height: 100%;
+  width: 65em;
+  margin: auto;
 }
 
-.center ul li {
-  margin-right: 10px;
+.splash-text{
+  flex: 1.5;
 }
 
-.active{
-  color: #EA6536;
+.game{
+  background-color: rosybrown;
+  flex: 1.5;
+  height: 500px;
+}
+
+.projects{
+  background-color: lightblue;
+  height: 500px;
+}
+
+.projects-inner{
+  display: flex;
+  height: 100%;
+  width: 65em;
+  margin: auto;
 }
