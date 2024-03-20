@@ -34,8 +34,7 @@ body {
 }
 
 .splash-inner{
-  display: flex;
-  flex-direction: row;
+  @apply flex md:flex-row flex-col;
   height: 100%;
   width: 65em;
   margin: auto;
@@ -53,12 +52,12 @@ body {
 
 .projects{
   background-color: lightblue;
-  height: 500px;
+  height: 750px;
 }
 
+
 .projects-inner{
-  display: flex;
-  height: 100%;
-  width: 65em;
   margin: auto;
+  padding-top: 2rem;
+  width: 85%;
 }
